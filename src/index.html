@@ -4,27 +4,46 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+  </head> 
   <body>
     <div id="root">
       <h1>Cifrado Cesar!</h1>
     </div>
-
-    <label> Cifrado de Texto</label>
+    
+    
+        <label> Escribe el texto a cifrar</label>
    
-    <input name="txReci" type="text" id="txReci"> 
+        <input name="txReci" type="text" id="txReci" placeholder="Escribe el texto"> 
+       <br>
+       <br/>
+    
+        <label> Escribe nivel de offset</label>
+        <input name="offset" type="number" id="offs" placeholder="Elije nivel"> 
+          
+        <input type="submit" value="Cifrado" id="boton"> 
+        <br>
+        <br/>
+        <label id="titFin"> "El resultado es: "</label>
+        <div id="resulCifrar"> </div>
+  
+
+
+  
+    <label> Escribe el texto a decifrar</label>
+
+    <input name="txDecifra" type="text" id="txDecifra" placeholder="Escribe el texto"> 
+   <br>
+   <br/>
+
+    <label> Escribe nivel de offset</label>
+    <input name="offsetDecifra" type="number" id="offsDecifra" placeholder="Elije nivel"> 
+      
+    <input type="submit" value="Decifrar" id="btnDecifra"> 
     <br>
     <br/>
-    
-    <label> Escribe nivel de offset</label>
-    <input name="offset" type="text" id="offs"> 
-          
-    <input type="submit" value="Cifrado" id="boton"> 
-    
     <label id="titFin"> "El resultado es: "</label>
-    <div id="resulCifrar"> </div>
-
-
+     <div id="resulDecifrar"> 
+     </div>
     
     <script src="cipher.js"></script>
     <script src="index.js"></script>
