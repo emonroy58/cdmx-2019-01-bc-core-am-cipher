@@ -1,40 +1,65 @@
 
 
 window.cipher = {
-   encode: (offset,textRecibido) => {
-     let result = [];
- 
-  for(let i = 0; i< textRecibido.length; i++)
-       {
-         //console.log(textRecibido.charAt(i));
-         let posicion = textRecibido.charCodeAt(i);//posicion en CodAsc
-         //console.log(posicion);
-           let posFin =((posicion-65+offset)% 26 +65); //calcular posicion Cipher
-          // console.log(posFin);
-         result.push(String.fromCharCode(posFin));//agrega nuevas letras al arreglo
-         //console.log(result);
-       }
-         let resultado = result.join('');
-        //console.log(result);
-    return resultado;
-  },
-
-
-    decode: (offsetDec,textRecibidoDec) =>{
-      let resultDec = [];
-  
-   for(let i = 0; i < textRecibidoDec.length; i++)
+  encode: (offsetCifra,txtRecibeCifra) =>{
+    let resulCifra = [];
+  for(let i = 0; i < txtRecibeCifra.length; i++)
+      {
+        if(txtRecibeCifra.charAt(i) === txtRecibeCifra.charAt(i).toUpperCase())
         {
-          //console.log(textRecibido.charAt(i));
-          let posicionDec = textRecibidoDec.charCodeAt(i);//posicion en CodAsc
-          //console.log(posicion);
-           let posFinDec =((posicionDec+65-offsetDec)% 26 +65); //calcular posicion Cipher
-           // console.log(posFin);
-          resultDec.push(String.fromCharCode(posFinDec));//agrega nuevas letras al arreglo
-          //console.log(result);
+          //console.log(txtRecibeCifra.charAt(i));
+          let posicionCifra = txtRecibeCifra.charCodeAt(i);//posicion en CodAsc
+          //console.log(posicionCifra);
+          let posFinCifra =((posicionCifra-65+offsetCifra)% 26 +65); //calcular posicion Cipher
+          // console.log(posFinCifra);
+          resulCifra.push(String.fromCharCode(posFinCifra));//agrega nuevas letras al arreglo
+         //console.log(result);
+        } 
+       else if(txtRecibeCifra.charAt(i) === txtRecibeCifra.charAt(i).toLowerCase())
+       {
+         //console.log(txtRecibeCifra.charAt(i));
+         let posicionCifra = txtRecibeCifra.charCodeAt(i);//posicion en CodAsc
+         //console.log(posicionCifra);
+         let posFinCifra =((posicionCifra-97+offsetCifra)% 26 +97); //calcular posicion Cipher
+         // console.log(posFinCifra);
+         resulCifra.push(String.fromCharCode(posFinCifra));//agrega nuevas letras al arreglo
+        //console.log(result);
+       }
+      
+      }
+    let resultadoCifra = resulCifra.join('');
+    //console.log(result);
+   return resultadoCifra;
+   },
+
+
+decode: (offsetDec,textRecibidoDec) =>{
+  let resultDec = [];
+  for(let i = 0; i < textRecibidoDec.length; i++)
+        {
+          if(textRecibidoDec.charAt(i) === textRecibidoDec.charAt(i).toUpperCase())
+          {
+            //console.log(textRecibido.charAt(i));
+            let posicionDec = textRecibidoDec.charCodeAt(i);//posicion en CodAsc
+            //console.log(posicion);
+            let posFinDec =((posicionDec+65-offsetDec)% 26 +65); //calcular posicion Cipher
+            // console.log(posFin);
+            resultDec.push(String.fromCharCode(posFinDec));//agrega nuevas letras al arreglo
+            //console.log(result);
+          } 
+          else if (textRecibidoDec.charAt(i) === textRecibidoDec.charAt(i).toLowerCase())
+          { 
+             console.log(textRecibidoDec.charAt(i));
+             let posicionDec = textRecibidoDec.charCodeAt(i);//posicion en CodAsc
+             console.log(posicionDec);
+             let posFinDec =((posicionDec+97-offsetDec)% 14 +97); //calcular posicion Cipher
+             console.log(posFinDec);
+             resultDec.push(String.fromCharCode(posFinDec));//agrega nuevas letras al arreglo
+             console.log(resultDec);
+          }  
         }
           let resultadoDec = resultDec.join('');
-         //console.log(result);
+         console.log(resultadoDec);
      return resultadoDec;
      }
 }

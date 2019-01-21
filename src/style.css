@@ -1,0 +1,138 @@
+.root{
+     background-image:url(https://i.pinimg.com/736x/27/dc/98/27dc98ce632b46e951a82e81c7a7890d.jpg);
+}
+
+.portadaMenu{
+    background-image:url(https://i.pinimg.com/originals/41/87/8d/41878deea8b5caa252d4e3781f48accb.png);
+    margin-left: -30px;
+    padding: 500px;
+    border: 80px;
+    position: relative;
+   }
+
+.resultado{
+    background-image:url(https://i.pinimg.com/564x/0b/7b/f8/0b7bf87aadb1f58536a9604dad635614.jpg);
+    margin-block-start: 0px;
+    padding: 0px;
+    border: opx;
+    position: relative;                   
+           }         
+ 
+
+
+h1{
+    font-size: 60px;
+    margin: auto;
+    padding-top: 13.5rem;
+    font-family: centuy;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    margin-inline-start: 1%;
+    font-family: centuy Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.btninicio{
+    
+    font-size:15px;
+    font-family:Arial;
+    color: #fafafa;
+    background:rgba(231, 164, 131, 0.788);
+         width: 160px;
+         height:30px;
+          border-radius: 3px;
+          position: relative;
+          left: 700px;
+                 
+          }
+
+ .btnCifra_Menu{
+    font-size:20px;
+    font-family:Arial;
+    color: #fafafa;
+    background:rgba(231, 164, 131, 0.788);
+                width: 220px;
+                height:50px;
+                border-radius: 3px;
+    position: fixed;
+    top: 220px;
+    left: 150px;                                                    
+    }
+
+ .btnDecifra_Menu{
+    font-size:20px;
+    font-family:Arial;
+    color: #fafafa;
+    background:rgba(231, 164, 131, 0.788);
+            width: 220px;
+            height:50px;
+     border-radius: 3px;
+     position: fixed;
+     top: 220px;
+     left: 650px;                                                    
+   }
+         
+   .btn_Menu{
+    font-size:15px;
+    font-family:Arial;
+    color: #fafafa;
+    background:rgba(231, 164, 131, 0.788);
+            width: 150px;
+            height:30px;
+     border-radius: 3px;
+     position: fixed;
+     top: 150px;
+     left: 420px;                                                    
+   }      
+
+
+ .etTxtEntrada{
+     top: 180px;
+     position: relative;
+     margin-left: 75px;
+     padding: 90px;
+                 
+     }
+
+.recibeTxtEntrada{
+        top: 195px;
+        position: relative;
+        margin-left: 165px;
+        padding: 20px;
+        
+               
+        }  
+        
+.niveloff{
+        top: 190px;
+        position: relative;
+        margin-left: 240px;
+        padding: 5px;
+        
+}
+
+.btnCifrar{
+    top: 190px;
+    position: relative;
+    margin-left: 10px;
+    padding: 5px;
+    
+}
+
+.txtResultado{
+    top: 185px;
+    position: relative;
+    margin-left: 160px;
+    padding: 20px;
+}
+ 
+.btndeCifrar{
+    top: 155px;
+    position: relative;
+    margin-left: 805px;
+    padding: 5px;
+    
+}
