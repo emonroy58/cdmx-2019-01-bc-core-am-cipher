@@ -5,7 +5,12 @@ window.cipher = {
     let resulCifra = [];
   for(let i = 0; i < txtRecibeCifra.length; i++)
       {
-        if(txtRecibeCifra.charAt(i) === txtRecibeCifra.charAt(i).toUpperCase())
+        let posicionCifra = txtRecibeCifra.charCodeAt(i);
+        if((posicionCifra>=32 && posicionCifra<=64) || (posicionCifra>=123 && posicionCifra<=254))//toma rango de simbolos, si la posiscion se encuentra en ese rango conserva la posicion inicial
+        {
+           resulCifra.push(String.fromCharCode(posicionCifra));
+        }
+         else if(txtRecibeCifra.charAt(i) === txtRecibeCifra.charAt(i).toUpperCase())
         {
           //console.log(txtRecibeCifra.charAt(i));
           let posicionCifra = txtRecibeCifra.charCodeAt(i);//posicion en CodAsc
@@ -36,8 +41,13 @@ window.cipher = {
 decode: (offsetDec,textRecibidoDec) =>{
   let resultDec = [];
   for(let i = 0; i < textRecibidoDec.length; i++)
-        {
-          if(textRecibidoDec.charAt(i) === textRecibidoDec.charAt(i).toUpperCase())
+      {
+        let posicionDec = textRecibidoDec.charCodeAt(i);
+          if((posicionDec>=32 && posicionDec<=64) || (posicionDec>=123 && posicionDec<=254))
+         {
+          resultDec.push(String.fromCharCode(posicionDec));
+         } 
+          else if(textRecibidoDec.charAt(i) === textRecibidoDec.charAt(i).toUpperCase())
           {
             //console.log(textRecibido.charAt(i));
             let posicionDec = textRecibidoDec.charCodeAt(i);//posicion en CodAsc
@@ -49,17 +59,17 @@ decode: (offsetDec,textRecibidoDec) =>{
           } 
           else if (textRecibidoDec.charAt(i) === textRecibidoDec.charAt(i).toLowerCase())
           { 
-             console.log(textRecibidoDec.charAt(i));
+             //console.log(textRecibidoDec.charAt(i));
              let posicionDec = textRecibidoDec.charCodeAt(i);//posicion en CodAsc
-             console.log(posicionDec);
-             let posFinDec =((posicionDec+97-offsetDec)% 14 +97); //calcular posicion Cipher
-             console.log(posFinDec);
+             //console.log(posicionDec);
+             let posFinDec =((posicionDec-122-offsetDec)% 26 +122); //calcular posicion Cipher
+             //console.log(posFinDec);
              resultDec.push(String.fromCharCode(posFinDec));//agrega nuevas letras al arreglo
-             console.log(resultDec);
+             //console.log(resultDec);
           }  
         }
           let resultadoDec = resultDec.join('');
-         console.log(resultadoDec);
+         //console.log(resultadoDec);
      return resultadoDec;
      }
 }
