@@ -1,10 +1,11 @@
 # Proyecto Cifrado César
 
-# USO DE APLICACION CON PERFIL DE DESARROLLO
-* Requerimientos minimos para editar proyecto:
- » Editor de texto como Atom, Visual Code o Sublime Text.
- » Interprete de comandos como Git bash, o bien una shell (terminal) instalada
- » Instalacion de Node.js
+## USO DE APLICACION CON PERFIL DE DESARROLLO
+
+### Requerimientos minimos para editar proyecto:
+ * Editor de texto como Atom, Visual Code o Sublime Text.
+ * Interprete de comandos como Git bash, o bien una shell (terminal) instalada
+ * Instalacion de Node.js
 
 Para descargar el proyecto tendrás que hacer un _fork_ en el link (https://github.com/emonroy58/cdmx-2019-01-bc-core-am-cipher_v2) y _clonar_ este
 repositorio que contiene el _boilerplate_.
@@ -35,8 +36,9 @@ El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
 automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
 `npm run test`. 
 
-# PRUEBAS/TEST
- `test/cipher.spec.js`: este archivo contiene los tests que se utilizaron en este proyecto para probar que la aplicacion funciona de forma efectiva. (ver archivo....Link)
+### PRUEBAS/TEST
+
+El archivo  `test/cipher.spec.js` contiene los tests que se utilizaron en este proyecto para probar que la aplicacion funciona de forma efectiva. (ver archivo....Link)
 
 * Version del proyecto: 1.0.0
 
@@ -44,14 +46,17 @@ automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
 
 * Agradecimientos: 
 
-# USO DE APLICACION CON PERFIL DE USUARIO
-Requerimientos minimos para usuarios:
-» Instalación de un navegador Google Chrome, Mozilla Firefox o el de tu preferencia
-» Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v2/src/
-» Revisión y lectura del manual de usuario._____
+## USO DE APLICACION CON PERFIL DE USUARIO
 
-# ENFOQUE DEL PROYECTO
-» Planteamiento del problema
+### Requerimientos minimos para usuarios:
+* Leer el apartado "DESCRIPCION DE CRIFADO César", de este archivo
+* Instalación de un navegador Google Chrome, Mozilla Firefox o el de tu preferencia
+* Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v2/src/
+* Revisión y lectura del manual de usuario: https://drive.google.com/open?id=1Fl1qv1FOGTaTzdp9_5e3ykdVMnBjrvto
+
+## ENFOQUE DEL PROYECTO
+
+### Planteamiento del problema
   Las instituciones a nivel guarderia, específicamente la guardería No.8 ubicada en la Calle Pilares, Col. Las águilas, utiliza como medio de acceso un lector de huella digital para el ingreso de los padres de familia y a su vez el ingreso de los bebes/niños a la sala que corresponde, lo cual genera las siguientes dificultades:
   
    - Si el lector no funciona correctamente, se generan cuellos de botella en el       área ingreso, ya que los padres de familia tienen que esperar el                  restablecimiento del aparato para el acceso.
@@ -61,15 +66,17 @@ Requerimientos minimos para usuarios:
    - Después de intentos fallidos le solicitan a los padres de familia anotarse en     lista de papel.
 
 
-# PROPUESTA DE PROYECTO
+## PROPUESTA DE PROYECTO
+
 Hacer uso de la aplicación Web basada en Cifrado César (Ver Apartado DESCRIPCIÓN DE CRIFADO César) para la generación de cifrado y descifrado de palabras, con el propósito de tener dos tipos de usuarios, los cuales se describen a continuación.
 
 **Principales usuarios**
- »» Director (a) de la institución. Se encarga de generar palabras secretas,            mediante el  cifrado de Textos, con el propósito de otorgar un candado para el       acceso a la institución.
- »» Padres de familia. Utilizara la palabra secreta con el decodificador de acceso,     mediante el  descifrado de Textos, si la palabra es correcta y se valida en          recepción, el padre de familia cuenta con la llave correcta para el ingreso del      bebé.
+
+* Director (a) de la institución. Se encarga de generar palabras secretas, mediante el  cifrado de Textos,  con el propósito de otorgar un candado para el acceso a la institución.
+* Padres de familia. Utilizara la palabra secreta con el decodificador de acceso, mediante el               descifrado de Textos, si la palabra es correcta y se valida en recepción, el padre de familia cuenta      con la llave correcta para el ingreso del bebé.
 
 
-# DESCRIPCION DE CRIFADO César
+## DESCRIPCION DE CRIFADO César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -86,7 +93,7 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
-## Resumen del proyecto
+### Resumen del proyecto
 
 ¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
 
@@ -98,13 +105,13 @@ La temática es libre. Tú debes pensar en qué situaciones de la vida real se n
 - Mensajería secreta para parejas.
 
 
-## Consideraciones generales
+### Consideraciones generales
 
 - Este proyecto se debe resolver de manera individual.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
 - Tiempo para completarlo: 2 semanas divididas en 2 sprints (1 entrega cada viernes)
 
-## Objetivos de aprendizaje
+### Objetivos de aprendizaje
 
 En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
 
