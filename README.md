@@ -1,4 +1,75 @@
-# Cifrado César
+# Proyecto Cifrado César
+
+# USO DE APLICACION CON PERFIL DE DESARROLLO
+* Requerimientos minimos para editar proyecto:
+ » Editor de texto como Atom, Visual Code o Sublime Text.
+ » Interprete de comandos como Git bash, o bien una shell (terminal) instalada
+ » Instalacion de Node.js
+
+Para descargar el proyecto tendrás que hacer un _fork_ en el link (https://github.com/emonroy58/cdmx-2019-01-bc-core-am-cipher_v2) y _clonar_ este
+repositorio que contiene el _boilerplate_.
+
+El _boilerplate_ contiene la estructura de archivos así como la configuración de dependencias y tests:
+
+```text
+./
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── README.md
+├── package.json
+├── src
+│   ├── cipher.js
+│   ├── index.html
+│   ├── index.js
+│   └── style.css
+└── test
+    ├── cipher.spec.js
+    ├── headless.js
+    └── index.html
+```
+
+El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
+[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
+`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
+automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
+`npm run test`. 
+
+# PRUEBAS/TEST
+ `test/cipher.spec.js`: este archivo contiene los tests que se utilizaron en este proyecto para probar que la aplicacion funciona de forma efectiva. (ver archivo....Link)
+
+* Version del proyecto: 1.0.0
+
+* Autor: Elizabeth Monroy Gonzalez
+
+* Agradecimientos: 
+
+# USO DE APLICACION CON PERFIL DE USUARIO
+Requerimientos minimos para usuarios:
+» Instalación de un navegador Google Chrome, Mozilla Firefox o el de tu preferencia
+» Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v2/src/
+» Revisión y lectura del manual de usuario._____
+
+# ENFOQUE DEL PROYECTO
+» Planteamiento del problema
+  Las instituciones a nivel guarderia, específicamente la guardería No.8 ubicada en la Calle Pilares, Col. Las águilas, utiliza como medio de acceso un lector de huella digital para el ingreso de los padres de familia y a su vez el ingreso de los bebes/niños a la sala que corresponde, lo cual genera las siguientes dificultades:
+  
+   - Si el lector no funciona correctamente, se generan cuellos de botella en el       área ingreso, ya que los padres de familia tienen que esperar el                  restablecimiento del aparato para el acceso.
+
+   - Genera incertidumbre en los padres de familia porque no saben en qué momento el   bebé tendrá acceso a la institución.
+
+   - Después de intentos fallidos le solicitan a los padres de familia anotarse en     lista de papel.
+
+
+# PROPUESTA DE PROYECTO
+Hacer uso de la aplicación Web basada en Cifrado César (Ver Apartado DESCRIPCIÓN DE CRIFADO César) para la generación de cifrado y descifrado de palabras, con el propósito de tener dos tipos de usuarios, los cuales se describen a continuación.
+
+**Principales usuarios**
+ »» Director (a) de la institución. Se encarga de generar palabras secretas,            mediante el  cifrado de Textos, con el propósito de otorgar un candado para el       acceso a la institución.
+ »» Padres de familia. Utilizara la palabra secreta con el decodificador de acceso,     mediante el  descifrado de Textos, si la palabra es correcta y se valida en          recepción, el padre de familia cuenta con la llave correcta para el ingreso del      bebé.
+
+
+# DESCRIPCION DE CRIFADO César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 

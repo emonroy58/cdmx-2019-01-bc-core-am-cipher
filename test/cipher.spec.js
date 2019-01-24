@@ -33,8 +33,7 @@ describe('cipher', () => {
     // el test a continuación.
     //
      it('debería retornar " !@" para " !@"', () => {
-       assert.equal(cipher.encode(33, ' !@'),' !@');
-    });
+       assert.equal(cipher.encode(33, ' !@'),' !@');});
   });
 
   describe('cipher.decode', () => {
