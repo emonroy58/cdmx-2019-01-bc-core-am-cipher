@@ -38,13 +38,13 @@ automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
 
 ### PRUEBAS/TEST
 
-El archivo  `test/cipher.spec.js` contiene los tests que se utilizaron en este proyecto para probar que la aplicacion funciona de forma efectiva. (ver archivo....Link)
+El archivo  `test/cipher.spec.js` contiene los tests que se utilizaron en este proyecto para probar que la aplicacion funciona de forma efectiva. (ver descripción en https://drive.google.com/open?id=1tPbsCc8GNZ3BZvuYd_k62XlSHBKoZ8uv)
 
 * Version del proyecto: 1.0.0
 
 * Autor: Elizabeth Monroy Gonzalez
 
-* Agradecimientos: 
+* Agradecimientos: Agradezco en primer instancia la paciencia y apoyo que ha tenido para conmigo mi familia, sobre todo a mi pequeña Sofia porque aun a su corta edad comprende que requiero de algunos espacios para dar continuidad en esta nueva etapa y asi mismo en la incursión de este proyecto. De igual forma agradezco a mis compañeras de trabajo por el apoyo y aporte de sus conocimientos,asi como a los couch que han formado parte importante ya que su retroalimentacion y ayuda han encaminado este proyecto al final de su presentación.
 
 ## USO DE APLICACION CON PERFIL DE USUARIO
 
@@ -54,16 +54,18 @@ El archivo  `test/cipher.spec.js` contiene los tests que se utilizaron en este p
 * Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v2/src/
 * Revisión y lectura del manual de usuario: https://drive.google.com/open?id=1Fl1qv1FOGTaTzdp9_5e3ykdVMnBjrvto
 
+## INFORMACION SOBRE PROCESO Y DISEÑO
+ Descargar el docuemnto en el link https://drive.google.com/open?id=1X24tGiKWvNw-kX0LF0531c5SMDhtUCN1
 ## ENFOQUE DEL PROYECTO
 
 ### Planteamiento del problema
   Las instituciones a nivel guarderia, específicamente la guardería No.8 ubicada en la Calle Pilares, Col. Las águilas, utiliza como medio de acceso un lector de huella digital para el ingreso de los padres de familia y a su vez el ingreso de los bebes/niños a la sala que corresponde, lo cual genera las siguientes dificultades:
   
-   - Si el lector no funciona correctamente, se generan cuellos de botella en el       área ingreso, ya que los padres de familia tienen que esperar el                  restablecimiento del aparato para el acceso.
+   - Si el lector no funciona correctamente, se generan cuellos de botella en el   área ingreso, ya que los padres de familia tienen que esperar el restablecimiento del aparato para el acceso.
 
-   - Genera incertidumbre en los padres de familia porque no saben en qué momento el   bebé tendrá acceso a la institución.
+   - Genera incertidumbre en los padres de familia porque no saben en qué momento el bebé tendrá acceso a la institución.
 
-   - Después de intentos fallidos le solicitan a los padres de familia anotarse en     lista de papel.
+   - Después de intentos fallidos le solicitan a los padres de familia anotarse en lista de papel.
 
 
 ## PROPUESTA DE PROYECTO
@@ -73,8 +75,7 @@ Hacer uso de la aplicación Web basada en Cifrado César (Ver Apartado DESCRIPCI
 **Principales usuarios**
 
 * Director (a) de la institución. Se encarga de generar palabras secretas, mediante el  cifrado de Textos,  con el propósito de otorgar un candado para el acceso a la institución.
-* Padres de familia. Utilizara la palabra secreta con el decodificador de acceso, mediante el               descifrado de Textos, si la palabra es correcta y se valida en recepción, el padre de familia cuenta      con la llave correcta para el ingreso del bebé.
-
+* Padres de familia. Utilizara la palabra secreta con el decodificador de acceso mediante el descifrado de Textos, si la palabra es correcta y se valida en recepción, el padre de familia cuenta con la llave correcta para el ingreso del bebé.
 
 ## DESCRIPCION DE CRIFADO César
 
