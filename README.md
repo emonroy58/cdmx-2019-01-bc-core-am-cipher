@@ -7,7 +7,7 @@
  * Interprete de comandos como Git bash, o bien una shell (terminal) instalada
  * Instalacion de Node.js
 
-Para descargar el proyecto tendrás que hacer un _fork_ en el link (https://github.com/emonroy58/cdmx-2019-01-bc-core-am-cipher_v2) y _clonar_ este
+Para descargar el proyecto tendrás que hacer un _fork_ en el link (https://github.com/emonroy58/cdmx-2019-01-bc-core-am-cipher_v3) y _clonar_ este
 repositorio que contiene el _boilerplate_.
 
 El _boilerplate_ contiene la estructura de archivos así como la configuración de dependencias y tests:
@@ -51,7 +51,7 @@ El archivo  `test/cipher.spec.js` contiene los tests que se utilizaron en este p
 ### Requerimientos minimos para usuarios:
 * Leer el apartado "DESCRIPCION DE CRIFADO César", de este archivo
 * Instalación de un navegador Google Chrome, Mozilla Firefox o el de tu preferencia
-* Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v2/src/
+* Dar clic sobre el link https://emonroy58.github.io/cdmx-2019-01-bc-core-am-cipher_v3/src/
 * Revisión y lectura del manual de usuario: https://drive.google.com/open?id=1Fl1qv1FOGTaTzdp9_5e3ykdVMnBjrvto
 
 ## INFORMACION SOBRE PROCESO Y DISEÑO
