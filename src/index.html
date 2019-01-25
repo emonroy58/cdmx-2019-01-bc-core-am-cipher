@@ -8,9 +8,11 @@
 
   <body>
     <div class="root" id="portada">
+      <nav>
       <h1>Cifrado de Palabras</h1>
       <p>Es un generador y traductor de palabras secretas basado en Cifrado Cesar.</p>
-      <input type="submit" value="Iniciar" id="Inicio" class="btninicio"> 
+      <input type="submit" value="Iniciar" id="Inicio" class="btninicio">
+    </nav> 
     </div>
 
    <div class="portadaMenu" id="btnsMenu" >
@@ -22,11 +24,11 @@
     <input type="submit" value="Menu Principal" id="btMenuPrinc"  class="btn_Menu">   
    </div> 
 
- 
+  
     <div class="resultado" id="contCifrado" >
-         
+      
         <label id="cifrado" class="etTxtEntrada"> Escribe el texto a cifrar</label>
-        <label class="etTxtEntrada"> Selecciona Nivel de offset: </label>
+        <label class="etTxtOffset"> Selecciona Nivel de offset: </label>
         <input name="txCifra" type="text" id="txCifra" placeholder="Escribe el texto" class="recibeTxtEntrada"> 
          
        <input name="offCifra" type="number" id="offCifra" placeholder="Elije nivel" class="niveloff"> 
@@ -36,11 +38,11 @@
        <div id="resulCifra" class="txtResultado"> </div>
         
      </div>
-
-
+    
+    
      <div class="resultado" id="contdeCifrado" >
         <label id="decifrado" class="etTxtEntrada"> Escribe el texto a cifrar: </label>
-        <label class="etTxtEntrada"> Selecciona Nivel de offset: </label>
+        <label class="etTxtOffset"> Selecciona Nivel de offset: </label>
         <input name="txDeCifra" type="text" id="txDeCifra" placeholder="Escribe el texto" class="recibeTxtEntrada"> 
            
        <input name="offDeCifra" type="number" id="offDeCifra" placeholder="Elije nivel" class="niveloff"> 
@@ -49,7 +51,7 @@
 
       <div id="resulDeCifra" class="txtResultado"> </div>
     </div>
-
+  
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

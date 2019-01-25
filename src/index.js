@@ -38,7 +38,7 @@ btnMenuDeCifra.addEventListener('click', ()=>{
     document.getElementById("btMenuPrinc").style.display='block';
     document.getElementById('btnsMenu').style.display='none'; 
     document.getElementById('portada').style.display='none';
-    
+        
 });
 
 //PROCEDIMIENTO CIFRAR
@@ -80,3 +80,5 @@ const Decifrar = () =>{
     document.getElementById('resulDeCifra').innerHTML = resulDeCifra;//la variable resulDecifra recibe el resultado de la ejecucion de la funcion decode
    // console.log(resulCifra);
 }
+
+
